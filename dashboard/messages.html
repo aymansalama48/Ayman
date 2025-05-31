@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- ========= إعدادات الصفحة الأساسية ========= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صندوق الرسائل - لوحة تحكم الموقع</title>
+
+    <!-- ========= استيراد ملفات CSS المنظمة ========= -->
+    <link rel="stylesheet" href="../css/AymanHome.css">
+    <link rel="stylesheet" href="../css/login&Register.css">
+    <link rel="stylesheet" href="../css/about&skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="dashboard.css"> <!-- ملف CSS خاص للوحة التحكم (اختياري) -->
+</head>
+<body>
+
+<div class="Ayman">
+    <!-- ========= هيدر الموقع ========= -->
+    <div class="A1">
+        <a href="../index.html">
+            <h1 class="animate__heartBeat">Ayman Salama</h1>
+        </a>
+    </div>
+    <br><br>
+
+    <!-- ========= شريط التنقل ========= -->
+    <center>
+        <div class="A2_Navbar">
+            <div class="animate__animated animate__zoomIn mb-4">
+                <a href="../dashboard/dashboard.html" class="active">🏠 لوحة التحكم</a>
+                <a href="../dashboard/projectmanagement.html">📁 إدارة المشاريع</a>
+                <a href="../dashboard/messages.html">📬 الرسائل</a>
+                <a href="../dashboard/profile.html">👤 الملف الشخصي</a>
+                <a href="../dashboard/settings.html">⚙️ الإعدادات</a>
+                <a href="../index.html">🔙 عودة للموقع</a>
+            </div>
+        </div>
+    </center>
+    <br>
+
+    <!-- ========= مقدمة الصفحة ========= -->
+    <div class="A3_Intro">
+        <h2 style="font-size: 30px;">صندوق الرسائل</h2>
+        <p>
+            هنا يمكنك مراجعة جميع الرسائل الواردة من العملاء أو الزوار. قم بالضغط على أي رسالة لقراءة التفاصيل والرد عليها.
+        </p>
+    </div>
+</div>
+
+<!-- ========= المحتوى الرئيسي: عرض الرسائل ========= -->
+<div class="main-content">
+    <div class="about-container" style="margin-bottom: 40px;">
+        <h2><i class="fas fa-envelope"></i> صندوق الرسائل</h2>
+        <br><br>
+
+     
+        <!-- رسالة 1 -->
+
+        <div class="AymanMessageBox">
+            <br><br>
+            <h2>Ayman Salama</h2>
+            <div class="AymanMessageHeader" style="display: flex; align-items: center;">
+        <br>
+     
+                <!-- التاريخ في أقصى الشمال -->
+                <span style="flex:1; text-align:left;">
+                    <span class="AymanMessageDate" style="font-size:14px; color:#aaa;">2025-05-29</span>
+                </span>
+            </div>
+            <center>
+
+                <div class="AymanMessageBody">
+                    <p>
+                        مرحباً، أريد الاستفسار عن خدمات تطوير المواقع لديكم.
+                    </p>
+                </div>
+            </center>
+            <div class="AymanMessageEmail">
+                البريد: mohamed@email.com
+            </div>
+            <center>
+                
+                <div class="AymanMessageButtons" >
+                    <button class="login-button" onclick="window.location.href='viewMessage.html';">عرض</button>
+                    <button class="login-button delete" onclick="deleteMessage(this);">حذف</button>
+                </div>
+            </center>
+        </div>
+
+      
+
+        <!-- حالة عدم وجود رسائل -->
+
+
+
+
+        <div class="AymanMessageBox">
+
+            
+            
+            <div style="text-align:center; color:#ffffff; margin-top:30px;"> 
+            <h2> لا توجد رسائل جديدة.</h2>
+             </div>
+        
+        <br>
+
+
+
+
+
+
+
+
+
+    </div>
+</div> 
+</div>
+
+
+</body>
+</html>
+<!-- ========= CSS المخصص للرسائل فقط ========= -->
+<style>
+/* ==== تصميم صناديق الرسائل ==== */
+.AymanMessageBox {
+    background: #222c;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    padding: 18px 14px;
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.AymanMessageHeader {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.AymanMessageBody {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.AymanMessageEmail {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.AymanMessageButtons {
+    margin-top: 10px;
+    
+
+ 
+}
+.AymanMessageButtons .delete {
+    background: #ea4335;
+    color: #fff;
+}
+</style>
